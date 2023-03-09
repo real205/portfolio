@@ -1,0 +1,1399 @@
+@media screen and (max-width: 1800px) {
+  .indexBanner02 .inner .slideIndex {
+    border-radius: 0;
+  }
+  .inquiryBanner .inner {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* header start */
+  header {
+    height: 60px;
+    padding: 0;
+    background: rgba(34, 34, 34, 0.8);
+    border-bottom: 1px solid rgba(233, 233, 233, 0.3);
+  }
+  header .inner {
+    width: 100%;
+    padding: 0 5%;
+  }
+  header .inner .logo {
+    width: 118px;
+  }
+  header .inner ul li {
+    display: none;
+  }
+  header .inner .signIn li.lang {
+    display: block;
+    margin-right: 0;
+  }
+  header .inner .signIn li.lang div {
+    width: 70px;
+    height: auto;
+    left: -10px;
+    border-radius: 0;
+  }
+  header .inner .signIn li.lang div a {
+    font-size: 0.8em;
+    padding: 0 20px;
+  }
+  header .inner ul .mobile_btn {
+    display: block;
+    font-size: 2rem;
+    margin-left: 0;
+    padding-left: 10%;
+    cursor: pointer;
+    color: #ff6400;
+  }
+  header .inner ul .mobile_btn:before {
+    display: none;
+  }
+  /* header end */
+
+  /* footer start */
+  footer {
+    background: #222;
+  }
+  footer .inner {
+    width: 100%;
+    padding: 13% 10%;
+  }
+  footer .inner .f_logo {
+    margin-bottom: 10%;
+  }
+  footer .inner ul {
+    flex-direction: column;
+  }
+  footer .inner ul li {
+    margin-bottom: 7%;
+  }
+  footer .inner ul li:nth-child(3) ul {
+    flex-direction: row;
+  }
+  footer .inner ul li:nth-child(3) ul li {
+    margin-left: 5%;
+  }
+  footer .inner ul li ul li {
+    margin-bottom: 0;
+  }
+  footer .inner .copy {
+    margin-top: 5%;
+  }
+  .inquiryBanner .inner {
+    height: 60vh;
+    margin-bottom: 0;
+  }
+  .inquiryBanner .inner:after,
+  .inquiryBanner .inner:before {
+    width: 55%;
+    height: 30vh;
+  }
+  .inquiryBanner .inner h2 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-top: 80px;
+  }
+  .topBtn {
+    display: none !important;
+  }
+  /* footer end */
+
+  /* common start */
+  .br {
+    display: inline;
+  }
+  .mbr {
+    display: block;
+  }
+  .indexBanner01 .inner,
+  .indexBanner05 .inner,
+  .forwardingBanner01 .inner,
+  .forwardingBanner03 .inner,
+  .fulfillmentBanner02 .inner,
+  .warehouseBanner01 .inner,
+  .warehouseBanner02 .inner,
+  .warehouseBanner03 .inner,
+  .warehouseBanner04 .inner,
+  .subBanner .inner,
+  .loginContainer .inner {
+    width: 90%;
+    margin: 80px auto;
+  }
+  .indexBanner01 .inner .textbox h2,
+  .indexBanner03 .inner .textbox h2,
+  .indexBanner05 .inner .textbox h2,
+  .indexBanner06 .inner .textbox h2,
+  .indexBanner04 .inner .title,
+  .crossborder .inner .textbox h2,
+  .crossborderBanner01 .inner .textbox h2,
+  .crossborderBanner02 .inner .title,
+  .crossborderBanner03 .inner .title,
+  .forwarding .inner .textbox h2,
+  .forwardingBanner01 .inner .textbox h2,
+  .forwardingBanner02 .inner .title,
+  .forwardingBanner02 .inner .title,
+  .forwardingBanner03 .inner .title,
+  .fulfillment .inner .textbox h2,
+  .fulfillmentBanner01 .inner .textbox h2,
+  .fulfillmentBanner02 .inner .title,
+  .fulfillmentBanner03 .inner .textbox h2,
+  .fulfillmentBanner04 .textbox h2,
+  .fulfillmentBanner05 .inner .textbox h2,
+  .warehouse .inner .textbox h2,
+  .warehouseBanner01 .inner .textbox h2,
+  .warehouseBanner02 .inner .title,
+  .warehouseBanner03 .inner .textbox h2,
+  .warehouseBanner04 .inner .textbox h2,
+  .subBanner .inner .textbox h2 {
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .visual .textbox p,
+  .indexBanner01 .inner .textbox p,
+  .indexBanner03 .inner .textbox p,
+  .indexBanner05 .inner .textbox p,
+  .indexBanner06 .inner .textbox p,
+  .crossborder .inner .textbox .bottom a,
+  .crossborderBanner01 .inner .textbox p,
+  .forwarding .inner .textbox .bottom a,
+  .forwardingBanner01 .inner .textbox p,
+  .fulfillment .inner .textbox .bottom a,
+  .fulfillmentBanner01 .inner .textbox p,
+  .fulfillmentBanner03 .inner .textbox p,
+  .fulfillmentBanner04 .textbox p,
+  .fulfillmentBanner05 .inner .textbox p,
+  .warehouse .inner .textbox .bottom a,
+  .warehouseBanner01 .inner .textbox p,
+  .warehouseBanner04 .inner .textbox p,
+  .subBanner .inner .textbox p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  .indexBanner01 .inner .textbox h2 b,
+  .indexBanner02 .inner .title b,
+  .indexBanner03 .inner .textbox h2 b,
+  .indexBanner04 .inner .title b,
+  .indexBanner05 .inner .textbox h2 b,
+  .indexBanner06 .inner .textbox h2 b,
+  .crossborderBanner02 .inner .title b,
+  .crossborderBanner03 .inner .title b,
+  .forwardingBanner01 .inner .textbox h2 b,
+  .forwardingBanner02 .inner .title b,
+  .forwardingBanner03 .inner .title b,
+  .fulfillmentBanner01 .inner .textbox h2 b,
+  .fulfillmentBanner02 .inner .title b,
+  .fulfillmentBanner03 .inner .textbox h2 b,
+  .fulfillmentBanner04 .textbox h2 b,
+  .fulfillmentBanner05 .inner .textbox h2 b,
+  .warehouseBanner01 .inner .textbox h2 b,
+  .warehouseBanner02 .inner .title b,
+  .warehouseBanner03 .inner .textbox h2 b,
+  .warehouseBanner04 .inner .textbox h2 b,
+  .inquiry .textbox h2 b,
+  .notice .inner .textbox h2 b,
+  .subBanner .inner .textbox h2 b {
+    font-size: 1.5em;
+    line-height: 0;
+    margin-left: 0;
+  }
+  .crossborderBanner01 .inner ul li p,
+  .forwardingBanner01 .inner ul li p,
+  .fulfillmentBanner01 .inner ul li p,
+  .warehouseBanner01 .inner ul li p {
+    width: 80%;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  /* common end */
+
+  /* index start */
+  /* visual start*/
+  .visual {
+    height: auto;
+  }
+  .visual .inner {
+    position: absolute;
+    width: 90%;
+    margin: 0 5%;
+    flex-direction: column;
+  }
+  .visual .inner .textbox {
+    position: unset;
+    padding: 150px 0 60px;
+  }
+  .visual .textbox h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .visual .textbox h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .visual .textbox ul li {
+    margin-right: 10px;
+  }
+  .visual .textbox ul li a {
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+    font-size: 1rem;
+    line-height: 50px;
+  }
+  .visual .visualContent {
+    width: 100%;
+  }
+  .visual .visualContent .bg {
+    height: 100%;
+  }
+  .visual .visualContent video {
+    height: auto;
+  }
+  /* visual end */
+
+  /* indexBanner01 start */
+  .indexBanner01 .contents {
+    flex-direction: column;
+  }
+  .indexBanner01 .inner .contents li {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+  }
+  .indexBanner01 .inner .contents li:nth-child(2) {
+    margin: 20px 0;
+  }
+  .indexBanner01 .inner .contents li h2 {
+    font-size: 1.3rem;
+  }
+  .indexBanner01 .inner .contents li p {
+    font-size: 0.8rem;
+  }
+  .indexBanner01 .inner .contents li:before {
+    top: 7%;
+    right: 7%;
+    background-size: 80% !important;
+  }
+  /* indexBanner01 end */
+
+  /* indexBanner02 start */
+  .indexBanner02 .inner {
+    width: 100%;
+    margin: 80px auto;
+  }
+  .indexBanner02 .inner .title {
+    font-size: 2.1rem;
+  }
+  .indexBanner02 .inner .title {
+    top: 20%;
+  }
+  .indexBanner02 .inner .slideIndex {
+    height: 50vh;
+    background-size: 92%;
+    background-position: 0 0;
+  }
+  .indexBanner02 .inner .slideIndex .text {
+    top: 33%;
+    flex-direction: column;
+  }
+  .indexBanner02 .inner .slideIndex .textbox {
+    width: 100%;
+    margin: 0;
+  }
+  .indexBanner02 .inner .slideIndex .textbox h2 {
+    font-size: 3rem;
+  }
+  .indexBanner02 .inner .slideIndex .textbox p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .indexBanner02 .inner .slideIndex .img img {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 50%;
+  }
+  /* indexBanner02 end */
+
+  /* indexBanner03 start */
+  .indexBanner03 {
+    background: url("/imgs/indexBanner03BgMobile.png") no-repeat center top;
+    padding-bottom: 0px;
+  }
+  .indexBanner03 .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .indexBanner03 .inner .textbox h2 {
+    padding-top: 40px;
+  }
+  .indexBanner03 .inner .content {
+  }
+  .indexBanner03 .inner .content img.pc {
+    display: none;
+  }
+  .indexBanner03 .inner .content img.mobile {
+    display: block;
+  }
+  /* indexBanner03 end */
+
+  /* indexBanner04 start */
+  .indexBanner04 .inner {
+    width: 90%;
+    margin: 150px auto 80px;
+  }
+  .indexBanner04 .inner .companyList li {
+    width: 33.3%;
+    height: auto;
+    margin: 0 0 5%;
+  }
+  .indexBanner04 .inner .companyList li img {
+    width: 80%;
+  }
+  /* indexBanner04 end */
+
+  /* indexBanner05 start */
+  .indexBanner05 {
+    padding-bottom: 100px;
+    background-size: 100%;
+  }
+  .indexBanner05 .inner .textbox,
+  .indexBanner05 .inner ul {
+    margin: 0;
+  }
+  .indexBanner05 .inner ul li {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .indexBanner05 .inner ul li:nth-child(1) {
+    margin-top: 0;
+  }
+  .indexBanner05 .inner ul li:nth-child(3) {
+    margin-top: 0;
+  }
+  .indexBanner05 .inner ul li div {
+    width: 100%;
+    height: auto;
+  }
+  .indexBanner05 .inner ul li div img {
+    width: 100%;
+  }
+  /* indexBanner05 end */
+  /* indexBanner06 start */
+  .indexBanner06 .inner {
+    width: 90%;
+    margin: 0 auto 80px;
+  }
+  .indexBanner06 .inner .textbox {
+    padding-top: 80px;
+  }
+  .indexBanner06 .inner .contents ul {
+    display: block;
+  }
+  .indexBanner06 .inner .contents ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .indexBanner06 .inner .contents ul li {
+    float: left;
+    width: 20%;
+    margin: 2.5% 2.5% 5%;
+  }
+  .indexBanner06 .inner .contents ul li div {
+    padding: 20% 0;
+    margin: 0 auto;
+  }
+  .indexBanner06 .inner .contents > img {
+    margin-bottom: 20px;
+  }
+  .indexBanner06 .inner .contents ul li img {
+    display: block;
+    width: 45px;
+    margin: 0 auto;
+  }
+  .indexBanner06 .inner .contents ul li p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  /* indexBanner06 end */
+  /* index start */
+
+  /* inquiry start */
+  .inquiry {
+    width: 100%;
+    padding: 0 5%;
+    margin: 120px 0;
+  }
+  .inquiry .block {
+    margin-bottom: 60px;
+  }
+  .inquiry .block ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .inquiry .textbox {
+    margin-bottom: 0;
+  }
+  .inquiry .textbox h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .inquiry .textbox p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+  .inquiry .block .inquiry_p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .inquiry .block ul li {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .inquiry .block ul li input[type="text"],
+  .inquiry .block input[type="tel"],
+  .inquiry .block input[type="email"],
+  .inquiry .block input[type="submit"] {
+    width: 100%;
+  }
+  .inquiry .block .select_service input[type="radio"] + label {
+    width: 100%;
+    padding: 7% 0;
+  }
+  .inquiry .block .inquiry_p span {
+    font-size: 1rem;
+  }
+  .inquiry .block .select_info li label {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  .modal .modalContents {
+    width: 90%;
+    height: 83vh;
+    padding: 10%;
+  }
+  .modal .modalContents .modalClose {
+    font-size: 1.3rem;
+    top: 3%;
+    right: 5%;
+  }
+  .modal .modalContents h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .modal .modalContents p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+  .modal .modalContents strong {
+    margin: 0;
+  }
+  /* inquiry end */
+
+  /* notice start */
+  .notice .inner {
+    width: 100%;
+    padding: 0 5%;
+    margin: 120px 0;
+  }
+  .notice .inner .textbox {
+    margin-bottom: 0;
+  }
+  .notice .inner .textbox h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .notice .inner .textbox p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+  .notice .inner .noticeTab .noticeTabs {
+    width: 100%;
+  }
+  .notice .inner .noticeTab .noticeTabs li {
+    width: 33.3%;
+  }
+  .notice .inner .noticeTab .noticeTabs li a {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .news_table tbody tr td:first-child {
+    display: none;
+  }
+  .news_table tbody tr td:nth-child(2) {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .news_table tbody tr td:nth-child(3) {
+    font-size: 1rem;
+  }
+  .noticeView .inner {
+    width: 100%;
+    padding: 0 5%;
+    margin: 120px 0;
+  }
+  .noticeView .inner .textbox {
+    margin-bottom: 0;
+  }
+  .noticeView .inner .textbox h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .noticeView .inner .textbox p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+  .noticeView .inner .board .cont_box .view_table p,
+  .noticeView .inner .board .cont_box .view_table a,
+  .noticeView .inner .board .cont_box .view_table img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .noticeView .inner .board .subject .tit {
+    font-size: 1.5rem;
+  }
+  .noticeView .inner .board .cont_box .view_list {
+    min-height: 44px;
+  }
+  .noticeView .inner .board .cont_box .view_list ul li .subject {
+    display: none;
+  }
+  .media_list .clfx {
+    flex-direction: column;
+  }
+  .media_list .clfx li {
+    width: 100%;
+  }
+  .media_list .clfx li .img_area {
+    height: auto;
+  }
+  .media_list .clfx li .img_area .eventImg {
+    width: 15%;
+    height: auto;
+    right: 20px;
+  }
+  /* notice end */
+
+  /* FAQ start */
+  .faq h2 {
+    font-size: 1.3rem;
+  }
+  .faq p {
+    font-size: 1rem;
+  }
+  /* FAQ end */
+
+  /* subBanner */
+  .subBanner .inner ul li {
+    width: 32%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+  }
+  .subBanner .inner ul li .img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .subBanner .inner ul li .img img {
+    width: 100%;
+  }
+  .subBanner .inner ul li span {
+    margin: 0 0 10px 0;
+    font-size: 0.8rem;
+  }
+  .subBanner .inner ul li h2 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+  }
+  .subBanner .inner ul li p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-left: 0;
+  }
+  .subBanner .inner ul li a {
+    right: 20px;
+    bottom: 20px;
+  }
+  /* subBanner */
+
+  /* crossborder start */
+  /* crossbordervisual start */
+  .crossborder {
+    background-size: auto 100%;
+  }
+  .crossborder .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .crossborder .inner .textbox .top {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    padding: 15px 25px;
+  }
+  .crossborder .inner .textbox .bottom a {
+    padding: 15px 30px;
+  }
+  /* crossbordervisual end */
+  /* crossborderBanner01 start */
+  .crossborderBanner01 .inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  .crossborderBanner01 .inner ul {
+    padding-top: 50px;
+  }
+  .crossborderBanner01 .inner ul li {
+    width: 48%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .crossborderBanner01 .inner ul li h2 {
+    font-size: 1.3rem;
+    margin: 60px auto 15px;
+  }
+  /* crossborderBanner01 end */
+  /* crossborderBanner02 start */
+  .crossborderBanner02 .inner {
+    width: 90%;
+    margin: 80px auto 40px;
+  }
+  .crossborderBanner02 .inner ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .crossborderBanner02 .inner ul li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .crossborderBanner02 .inner ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .crossborderBanner02 .inner ul li span,
+  .crossborderBanner02 .inner ul li p {
+    width: 90%;
+    font-size: 1em;
+    display: block;
+    clear: both;
+  }
+  /* crossborderBanner02 end */
+  /* crossborderBanner03 start */
+  .crossborderBanner03 {
+    padding: 80px 0;
+  }
+  .crossborderBanner03 .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .crossborderBanner03 .inner .crossborderTab {
+    overflow: hidden;
+    margin: 40px 0 0;
+  }
+  .crossborderBanner03 .inner .crossborderTab .tabs {
+    display: inline-block;
+    padding: 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .crossborderBanner03 .inner .crossborderTab .tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .crossborderBanner03 .inner .crossborderTab .tabs li {
+    display: inline-block;
+    width: 160px;
+    font-size: 1rem;
+  }
+  .crossborderBanner03 .inner .tabContent ul {
+    flex-direction: column;
+  }
+
+  .crossborderBanner03 .inner .tabContent > ul > li:first-child,
+  .crossborderBanner03 .inner .tabContent > ul > li:last-child,
+  .crossborderBanner03 .inner .tabContent ul li:first-child,
+  .crossborderBanner03 .inner .tabContent ul li:last-child {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .crossborderBanner03 .inner .tabContent ul li img {
+    width: 100%;
+  }
+  .crossborderBanner03 .inner .tabContent ul li h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .crossborderBanner03 .inner .tabContent ul li ul {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .crossborderBanner03 .inner .tabContent ul li ul li {
+    font-size: 0.8rem;
+    margin: 0 15px 0 0 !important;
+    float: left;
+    width: auto !important;
+  }
+  .crossborderBanner03 .inner .tabContent ul li span {
+    font-size: 0.6rem;
+  }
+  .crossborderBanner03 .inner .crossborderTab .tabs li:after {
+    margin-top: 10px;
+  }
+  .crossborderBanner03 .inner .crossborderTab .tabs li:before {
+    margin-bottom: 15px;
+  }
+  .crossborderBanner03 .inner .tabContent.current {
+    margin: 0;
+  }
+  /* crossborderBanner03 end */
+  /* crossborder end */
+
+  /* forwarding start */
+  /* forwardingVisual start */
+  .forwarding {
+    background-size: auto 100%;
+  }
+  .forwarding .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .forwarding .inner .textbox .top {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    padding: 15px 25px;
+  }
+  .forwarding .inner .textbox .bottom a {
+    padding: 15px 30px;
+  }
+  /* forwardingVisual end */
+  /* forwardingBanner01 start */
+  .forwardingBanner01 .inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+  .forwardingBanner01 .inner ul {
+    padding-top: 50px;
+  }
+  .forwardingBanner01 .inner ul li {
+    width: 48%;
+  }
+  .forwardingBanner01 .inner ul li h2 {
+    font-size: 1.3rem;
+    margin: 60px auto 15px;
+  }
+  /* forwardingBanner01 end */
+  /* forwardingBanner02 start */
+  .forwardingBanner02 .inner {
+    width: 90%;
+    margin: 80px auto 40px;
+    padding: 0;
+  }
+  .forwardingBanner02 .inner ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .forwardingBanner02 .inner ul li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .forwardingBanner02 .inner ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .forwardingBanner02 .inner ul li span,
+  .forwardingBanner02 .inner ul li p {
+    width: 90%;
+    font-size: 1em;
+    display: block;
+    clear: both;
+  }
+  /* forwardingBanner02 end */
+  /* forwardingBanner03 start */
+  .forwardingBanner03 {
+    padding: 10% 0;
+  }
+  .forwardingBanner03 .inner ul {
+    flex-direction: column;
+  }
+  .forwardingBanner03 .inner ul li,
+  .forwardingBanner03 .inner ul li.active {
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 10% 10% 20%;
+    border: 1px solid #ff6400;
+    border-radius: 20px;
+  }
+  .forwardingBanner03 .inner ul li span,
+  .forwardingBanner03 .inner ul li.active span {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    opacity: 1;
+  }
+  .forwardingBanner03 .inner ul li img,
+  .forwardingBanner03 .inner ul li.active img {
+    width: 70%;
+    margin: 0 auto 15%;
+  }
+  .forwardingBanner03 .inner ul li h2,
+  .forwardingBanner03 .inner ul li.active h2 {
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  .forwardingBanner03 .inner ul li p,
+  .forwardingBanner03 .inner ul li.active p {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  /* forwardingBanner02 end */
+  /* forwardingBanner end */
+
+  /* fulfillment start*/
+  /* fulfillmentVisual start */
+  .fulfillment {
+    background-size: auto 100%;
+  }
+  .fulfillment .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fulfillment .inner .textbox .top {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    padding: 15px 25px;
+  }
+  .fulfillment .inner .textbox .bottom a {
+    padding: 15px 30px;
+  }
+  /* fulfillmentVisual end */
+
+  /* fulfillmentBanner01 start */
+  .fulfillmentBanner01 .inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  .fulfillmentBanner01 .inner ul {
+    padding-top: 50px;
+  }
+  .fulfillmentBanner01 .inner ul li {
+    width: 48%;
+  }
+  .fulfillmentBanner01 .inner ul li h2 {
+    font-size: 1.3rem;
+    margin: 60px auto 15px;
+  }
+  /* fulfillmentBanner01 end */
+
+  /* fulfillmentBanner02 start */
+  .fulfillmentBanner02 .inner ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fulfillmentBanner02 .inner ul li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .fulfillmentBanner02 .inner ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .fulfillmentBanner02 .inner ul li span,
+  .fulfillmentBanner02 .inner ul li p {
+    width: 90%;
+    font-size: 1em;
+    display: block;
+    clear: both;
+  }
+  /* fulfillmentBanner02 end */
+
+  /* fulfillmentRollingText stART */
+  .fulfillmentRollingText {
+    height: auto;
+  }
+  .fulfillmentRollingText .contents {
+    width: 600%;
+  }
+  .fulfillmentRollingText .contents p {
+    font-size: 5rem;
+    color: #222;
+    opacity: 0.1;
+    animation: rollingText 8s linear infinite;
+  }
+  @keyframes rollingText {
+    to {
+      transform: translateX(-1500px);
+    }
+    from {
+      transform: translateX(0px);
+    }
+  }
+  /* fulfillmentRollingText end */
+
+  /* fulfillmentBanner03 start */
+  .fulfillmentBanner03 {
+    height: auto;
+    padding-top: 0;
+    background: none;
+  }
+  .fulfillmentBanner03 .inner {
+    width: 100%;
+    margin: 80px auto 20px;
+  }
+  .fulfillmentBanner03 .inner .textbox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fulfillmentBanner03 .inner .mapSlider {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul {
+    flex-direction: column-reverse;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul > li {
+    width: 100%;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul > li:first-child {
+    opacity: 0;
+  }
+  .fulfillmentBanner03
+    .inner
+    .mapSlider
+    div.slick-center
+    > ul
+    > li:first-child {
+    opacity: 1;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul > li > img {
+    width: 90%;
+    opacity: 0.6;
+    margin: 30px auto 0;
+    transition: 300ms;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div.slick-center > ul > li > img {
+    width: 100%;
+    opacity: 1;
+    transition: 300ms;
+    margin-top: 0;
+  }
+  .fulfillmentBanner03 .inner .mapSlider ul li ul li img {
+    width: 40px;
+    height: auto;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul > li > ul {
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul > li > ul > li {
+    margin-bottom: 5px;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div > ul > li > ul > li p {
+    font-size: 1rem;
+  }
+  .fulfillmentBanner03 .inner .mapSlider div ul li ul li.mTitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 37vw;
+  }
+  .slick-prev {
+    left: 0px;
+  }
+  .slick-next {
+    right: 0px;
+    left: auto;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  /* fulfillmentBanner03 end */
+
+  /* fulfillmentBanner04 start */
+  .fulfillmentBanner04 .textbox {
+    width: 90%;
+    margin: 0 auto 80px;
+    padding-top: 0;
+  }
+  .fulfillmentBanner04 .imgContent {
+    position: unset;
+    top: 0;
+    width: 100%;
+  }
+  .fulfillmentBanner04 .imgContent img {
+    width: 100%;
+  }
+  .fulfillmentBanner04 .contents ul {
+    flex-direction: column;
+  }
+
+  .fulfillmentBanner04 .contents ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fulfillmentBanner04 .contents ul li {
+    width: 100%;
+    padding: 30px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #333;
+  }
+  .fulfillmentBanner04 .contents ul li:last-child {
+    border-bottom: 0;
+  }
+  .fulfillmentBanner04 .contents ul li .numb {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+  .fulfillmentBanner04 .contents ul li h2 {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+  .fulfillmentBanner04 .contents ul li p {
+    font-size: 1rem;
+  }
+  /* fulfillmentBanner04 end */
+
+  /* fulfillmentBanner05 start */
+  .fulfillmentBanner05 {
+    padding: 90px 0;
+    background-size: auto 100%;
+    background-position: center bottom;
+  }
+  .fulfillmentBanner05 .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fulfillmentBanner05 .inner .contents {
+    justify-content: space-around;
+  }
+  .fulfillmentBanner05 .inner .contents ul {
+    width: 45%;
+  }
+  .fulfillmentBanner05 .inner .contents ul li {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 10px;
+  }
+  .fulfillmentBanner05 .inner .contents ul li p {
+    font-size: 0.7rem;
+  }
+  .fulfillmentBanner05 .contents .bigImg.pc {
+    display: none;
+  }
+  .fulfillmentBanner05 .bigImg.mobile {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .fulfillmentBanner05 .bigImg.mobile img {
+    width: 100%;
+  }
+  /* fulfillmentBanner05 end */
+  /* fulfillment end*/
+
+  /* warehouse start */
+  /* warwhouseVisual start */
+  .warehouse {
+    background-size: auto 100%;
+  }
+  .warehouse .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .warehouse .inner .textbox .top {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    padding: 15px 25px;
+  }
+  .warehouse .inner .textbox .bottom a {
+    padding: 15px 30px;
+  }
+  /* warwhouseVisual end */
+  /* warehouseBanner01 start */
+  .warehouseBanner01 .inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  .warehouseBanner01 .inner ul {
+    padding-top: 50px;
+  }
+  .warehouseBanner01 .inner ul li {
+    width: 48%;
+  }
+  .warehouseBanner01 .inner ul li h2 {
+    font-size: 1.3rem;
+    margin: 60px auto 15px;
+  }
+  /* warehouseBanner01 end */
+  /* warehouseBanner02 start */
+  .warehouseBanner02 .inner ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .warehouseBanner02 .inner ul li {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .warehouseBanner02 .inner ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .warehouseBanner02 .inner ul li span,
+  .warehouseBanner02 .inner ul li p {
+    width: 90%;
+    font-size: 1em;
+    display: block;
+    clear: both;
+  }
+  /* warehouseBanner02 end */
+  /* warehouseBanner03 start */
+  .warehouseBanner03 {
+    height: 100vh;
+    margin: 0;
+    background-position: right bottom;
+    background-size: 100%;
+  }
+  .warehouseBanner03 .inner .textbox {
+    margin-top: 0;
+  }
+  .warehouseBanner03 .inner .textbox ul {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .warehouseBanner03 .inner .textbox ul li {
+    margin: 0 0 20px;
+  }
+  .warehouseBanner03 .inner .textbox ul li p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .warehouseBanner03 .inner .textbox ul li p b {
+    font-size: 1.2rem;
+  }
+  /* warehouseBanner03 end */
+  /* warehouseBanner04 start */
+  .warehouseBanner04 {
+    padding: 0 0 60px;
+  }
+  .warehouseBanner04 .inner .textbox {
+    margin-top: 0;
+  }
+  .warehouseBanner04 .inner ul {
+    flex-direction: column;
+  }
+  .warehouseBanner04 .inner ul li {
+    width: 100%;
+  }
+  .warehouseBanner04 .inner ul li:nth-child(2) {
+    margin: 30px 0;
+  }
+  .warehouseBanner04 .inner ul li h2 {
+    font-size: 1.3rem;
+  }
+  .warehouseBanner04 .inner ul li p {
+    font-size: 1rem;
+  }
+  /* warehouseBanner04 end */
+  /* warehouse end */
+
+  /* login start */
+  .loginContainer .inner {
+    height: auto;
+  }
+  .loginContainer .inner .title {
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin: 130px auto 60px;
+  }
+  .loginContainer .inner .notice {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  .loginContainer .inner .notice:before {
+    top: 30px;
+  }
+  .loginContainer .inner ul li div h2 {
+    font-size: 1.5rem;
+  }
+  /* login end */
+  /* popup start */
+  .indexPopup {
+    position: fixed;
+    top: 10%;
+    width: 90%;
+    height: auto;
+  }
+  .indexPopup a {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .indexPopup a img {
+    width: 100%;
+    height: auto;
+  }
+  .indexPopup1 {
+    left: 5%;
+  }
+  .indexPopup2 {
+    left: 5%;
+  }
+  .indexPopup .popupBtn {
+    display: flex;
+  }
+  .indexPopup .popupBtn a {
+    display: block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  /* popup end */
+}
+
+@media screen and (max-width: 500px) {
+  header .inner ul {
+    justify-content: flex-end;
+  }
+  /* indexBanner02 start */
+  .indexBanner02 .inner .title {
+    font-size: 2.1rem;
+    line-height: 1.3;
+    width: 50%;
+    top: 27%;
+    right: 5%;
+    left: auto;
+    z-index: 1;
+  }
+  .indexBanner02 .inner .slideIndex {
+    width: 100%;
+    height: 110vh;
+    background-position: 0 0;
+    background-size: 160%;
+  }
+  .indexBanner02 .inner .slideIndex .text {
+    top: 43%;
+    left: 15%;
+    flex-direction: column;
+  }
+  .indexBanner02 .inner .slideIndex .textbox {
+    width: 90%;
+    margin-right: 0;
+  }
+  .indexBanner02 .inner .slideIndex .textbox h2 {
+    font-size: 3rem;
+  }
+  .indexBanner02 .inner .slideIndex .textbox p {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  .indexBanner02 .inner .slideIndex .img img {
+    width: 55vw;
+    height: auto;
+  }
+  /* indexBanner02 end */
+
+  /* indexBanner03 start */
+  .indexBanner03 .inner .contents {
+    height: 135vw;
+    background: #fff;
+    background-size: contain;
+  }
+  .indexBanner03 .inner .contents .pc {
+    display: none;
+  }
+  .indexBanner03 .inner .contents .mobile {
+    display: block;
+  }
+  .indexBanner03 .inner .contents img {
+    width: 100%;
+  }
+  .indexBanner03 .inner .contents .mobile.bg {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  /* indexBanner03 end */
+  /* subPage start */
+  .crossborderBanner01 .inner ul li {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .crossborderBanner01 .inner ul li:last-child {
+    margin-bottom: 0;
+  }
+  .forwardingBanner01 .inner ul li {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .forwardingBanner01 .inner ul li:last-child {
+    margin-bottom: 0;
+  }
+  .fulfillmentBanner01 .inner ul li {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .fulfillmentBanner01 .inner ul li:last-child {
+    margin-bottom: 0;
+  }
+  .warehouseBanner01 .inner ul li {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .warehouseBanner01 .inner ul li:last-child {
+    margin-bottom: 0;
+  }
+  .subBanner .inner ul {
+    flex-direction: column;
+  }
+  .subBanner .inner ul li {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+  }
+  .loginContainer .inner ul {
+    flex-direction: column;
+  }
+  .loginContainer .inner ul li {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  /* subPage end */
+  .inquiryBanner .inner:after,
+  .inquiryBanner .inner:before {
+    height: 20vh;
+  }
+}
