@@ -1,20 +1,28 @@
 export default function Skills() {
   const skillCategories = [
     {
-      category: "Frontend",
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
+      category: "Frontend Framework",
+      skills: ["React", "Next.js", "TypeScript", "JavaScript (ES6+)"],
     },
     {
-      category: "Backend",
-      skills: ["Node.js", "Express", "NestJS", "GraphQL"],
+      category: "Markup & Styling",
+      skills: ["HTML5", "CSS3", "Tailwind CSS", "SCSS", "반응형 웹"],
     },
     {
-      category: "Database",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+      category: "Backend & Template",
+      skills: ["Node.js", "EJS", "PHP"],
     },
     {
-      category: "Tools",
-      skills: ["Git", "Docker", "AWS", "Vercel"],
+      category: "CMS & Platform",
+      skills: ["고도몰", "그누보드", "WordPress"],
+    },
+    {
+      category: "Development Tools",
+      skills: ["Git", "GitHub", "VS Code", "Figma"],
+    },
+    {
+      category: "Skills",
+      skills: ["UI/UX 설계", "컴포넌트 설계", "크로스 브라우징", "프로젝트 리딩"],
     },
   ];
 
@@ -24,7 +32,7 @@ export default function Skills() {
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
           Skills
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {skillCategories.map((category, index) => (
             <div
               key={index}

@@ -2,24 +2,51 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "프로젝트 1",
-      description: "프로젝트 설명을 여기에 작성하세요",
-      tech: ["React", "Next.js", "TypeScript"],
-      link: "#",
+      title: "LG 에너지솔루션 비셀체크 어드민",
+      period: "2025.07 ~ 2025.10",
+      description: "React 기반 어드민 시스템 구축 및 컴포넌트 구조 설계. PL로서 프로젝트 전체를 리딩하며 효율적인 개발 환경 구축",
+      tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      client: "LG에너지솔루션",
     },
     {
       id: 2,
-      title: "프로젝트 2",
-      description: "프로젝트 설명을 여기에 작성하세요",
-      tech: ["Node.js", "Express", "MongoDB"],
-      link: "#",
+      title: "삼성 갤럭시 크루 모집",
+      period: "2025.10 ~ 진행중",
+      description: "삼성 갤럭시 크루 모집 사이트 퍼블리싱 및 반응형 웹 구현",
+      tech: ["HTML", "CSS", "JavaScript"],
+      client: "PTKOREA",
     },
     {
       id: 3,
-      title: "프로젝트 3",
-      description: "프로젝트 설명을 여기에 작성하세요",
-      tech: ["Vue.js", "Tailwind CSS"],
-      link: "#",
+      title: "삼성 무풍에어컨 프로모션",
+      period: "2025.04 ~ 2025.06",
+      description: "삼성 무풍에어컨 프로모션 및 SMB 사업자몰 웹사이트 구축 및 운영 (PC, MOBILE)",
+      tech: ["HTML", "CSS", "JavaScript"],
+      client: "PTKOREA",
+    },
+    {
+      id: 4,
+      title: "SK C&C AI 포털 구축",
+      period: "2025.01 ~ 2025.02",
+      description: "EJS 기반 AI 포털 웹사이트 구축 및 컴포넌트 개발",
+      tech: ["EJS", "Node.js", "JavaScript"],
+      client: "SK C&C",
+    },
+    {
+      id: 5,
+      title: "wagle 플랫폼 사이트",
+      period: "2023.08 ~ 2024.07",
+      description: "wagle 플랫폼 사이트 구축 및 디벨롭 사이트 운영. UI 설계, 퍼블리싱 및 신규 콘텐츠 업데이트 담당",
+      tech: ["HTML", "CSS", "JavaScript"],
+      client: "로웸",
+    },
+    {
+      id: 6,
+      title: "빅토리 딜리버리 웹사이트",
+      period: "2025.01 ~ 2025.05",
+      description: "React 기반 빅토리 딜리버리 웹사이트 신규 구축 및 컴포넌트 개발",
+      tech: ["React", "JavaScript"],
+      client: "로지포커스",
     },
   ];
 
@@ -37,13 +64,21 @@ export default function Projects() {
             >
               <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500"></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                  {project.title}
-                </h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {project.title}
+                  </h3>
+                </div>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                  {project.period}
+                </p>
+                <p className="text-sm text-blue-600 dark:text-blue-400 mb-3">
+                  {project.client}
+                </p>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, index) => (
                     <span
                       key={index}
@@ -53,12 +88,6 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  자세히 보기 →
-                </a>
               </div>
             </div>
           ))}
