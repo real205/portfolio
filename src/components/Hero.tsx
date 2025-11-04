@@ -14,7 +14,7 @@ export default function Hero() {
           playsInline
           className="absolute w-full h-full object-cover opacity-30"
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />
+          <source src="/video/main.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-purple-900/30 to-black/70" />
       </div>
