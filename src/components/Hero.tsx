@@ -4,38 +4,48 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
-      {/* Animated background elements */}
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-        <motion.div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [90, 0, 90],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute w-full h-full object-cover opacity-30"
+        >
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-purple-900/30 to-black/70" />
+      </div>
+
+      {/* Animated particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 bg-blue-400/30 rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, Math.random() * 200 - 100],
+              x: [0, Math.random() * 200 - 100],
+              opacity: [0.3, 0.7, 0.3],
+            }}
+            transition={{
+              duration: Math.random() * 10 + 10,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          />
+        ))}
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <motion.p
-          className="text-lg md:text-xl text-blue-600 dark:text-blue-400 mb-4 font-semibold"
+          className="text-lg md:text-xl text-blue-400 mb-4 font-semibold"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -44,7 +54,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white"
+          className="text-5xl md:text-7xl font-bold mb-6 text-white"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -53,7 +63,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4"
+          className="text-xl md:text-2xl text-gray-200 mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -62,7 +72,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8"
+          className="text-lg md:text-xl text-gray-300 mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -86,7 +96,7 @@ export default function Hero() {
           </motion.a>
           <motion.a
             href="#contact"
-            className="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
+            className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg hover:bg-blue-500/20 transition-colors backdrop-blur-sm"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -107,9 +117,9 @@ export default function Hero() {
           repeatType: "reverse",
         }}
       >
-        <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-500 rounded-full flex justify-center">
+        <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
           <motion.div
-            className="w-1.5 h-1.5 bg-gray-600 dark:bg-gray-400 rounded-full mt-2"
+            className="w-1.5 h-1.5 bg-gray-200 rounded-full mt-2"
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           />
