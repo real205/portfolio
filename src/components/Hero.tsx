@@ -2,11 +2,17 @@ export default function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-6 text-center">
+        <p className="text-lg md:text-xl text-blue-600 dark:text-blue-400 mb-4 font-semibold">
+          Frontend Developer
+        </p>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
-          안녕하세요
+          한상헌
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-          웹 개발자 포트폴리오입니다
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4">
+          9년 경력의 프론트엔드 개발자입니다
+        </p>
+        <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-8">
+          React · Next.js · TypeScript
         </p>
         <div className="flex gap-4 justify-center">
           <a
