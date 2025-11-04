@@ -62,7 +62,6 @@ export default function Projects() {
       transition: {
         delay: index * 0.1,
         duration: 0.5,
-        ease: "easeOut",
       },
     }),
   };
