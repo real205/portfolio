@@ -43,14 +43,14 @@ export default function Projects() {
       className="relative bg-gray-50 dark:bg-gray-900 text-white h-full"
     >
       {/* 상단 고정 타이틀 */}
-      <div className=" w-full bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur-sm">
-        <h2 className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[140px] px-6 sm:px-10 pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20 font-extrabold text-gray-900 dark:text-white opacity-60">
+      <div className="w-full bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur-sm overflow-hidden">
+        <h2 className="barlow-condensed-medium uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl px-4 sm:px-6 md:px-10 pt-20 sm:pt-24 md:pt-32 lg:pt-40 pb-8 sm:pb-12 md:pb-16 lg:pb-20 font-extrabold text-gray-900 dark:text-white opacity-60 break-words">
           Projects
         </h2>
       </div>
 
       {/* 가로 스크롤 영역 */}
-      <div ref={horizontalRef} className="flex items-center px-10">
+      <div ref={horizontalRef} className="flex items-center px-4 sm:px-6 md:px-10">
         {projects.map((project) => (
           <div
             key={project.id}

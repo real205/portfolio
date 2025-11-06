@@ -44,11 +44,11 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-12 sm:py-20 md:py-24">
-          <div className="md:pr-12 text-left">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-16 sm:py-20 md:py-24">
+          <div className="md:pr-12 text-left max-w-full">
             <motion.p
-              className="barlow-condensed-medium text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-blue-400 mb-3 sm:mb-4 font-semibold"
+              className="barlow-condensed-medium text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-blue-400 mb-2 sm:mb-3 md:mb-4 font-semibold"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -57,7 +57,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.h1
-              className="barlow-condensed-regular text-5xl sm:text-7xl md:text-8xl lg:text-[120px] font-regular mb-4 sm:mb-6 text-white leading-[1.1] sm:leading-[1]"
+              className="barlow-condensed-regular text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-regular mb-3 sm:mb-4 md:mb-6 text-white leading-tight break-words"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -66,7 +66,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-lg sm:text-2xl md:text-3xl text-gray-200 mb-2"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -75,12 +75,12 @@ export default function Hero() {
             </motion.p>
 
             <motion.p
-              className="barlow-condensed-regular text-base sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-6 sm:mb-8"
+              className="barlow-condensed-regular text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 break-words"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              React · Next.js · TypeScript · HTML · CSS · JAVASCRIPT
+              React · Next.js · TypeScript<br className="sm:hidden" /> HTML · CSS · JavaScript
             </motion.p>
 
             <motion.div

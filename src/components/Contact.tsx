@@ -38,9 +38,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center bg-white dark:bg-gray-900 py-12 sm:py-16 md:py-20">
+    <section id="contact" className="min-h-screen flex items-center bg-white dark:bg-gray-900 py-12 sm:py-16 md:py-20 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
-        <h2 className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[140px] text-center mb-8 sm:mb-10 md:mb-12 text-gray-900 dark:text-white">
+        <h2 className="barlow-condensed-medium uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-gray-900 dark:text-white break-words">
           Contact
         </h2>
 
