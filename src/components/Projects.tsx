@@ -15,6 +15,9 @@ export default function Projects() {
     const horizontal = horizontalRef.current;
     if (!section || !horizontal) return;
 
+    // 모바일에서는 가로 스크롤 비활성화 (768px 미만)
+    if (window.innerWidth < 768) return;
+
     const totalWidth =
       horizontal.scrollWidth - document.documentElement.clientWidth;
 
@@ -49,41 +52,41 @@ export default function Projects() {
         </h2>
       </div>
 
-      {/* 가로 스크롤 영역 */}
-      <div ref={horizontalRef} className="flex items-center px-4 sm:px-6 md:px-10">
+      {/* 가로 스크롤 영역 (데스크톱) / 세로 그리드 (모바일) */}
+      <div ref={horizontalRef} className="flex flex-col md:flex-row items-stretch md:items-center px-4 sm:px-6 md:px-10 gap-6 md:gap-0 py-8 md:py-0">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="shrink-0 w-[75vw] md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden mx-[3vw]"
+            className="shrink-0 w-full md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden md:mx-[3vw]"
           >
-            <div className="relative h-[55vh] overflow-hidden">
+            <div className="relative h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent flex items-end p-8">
-                <div>
-                  <div className="text-sm text-white/80 mb-1">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4 sm:p-6 md:p-8">
+                <div className="w-full">
+                  <div className="text-xs sm:text-sm text-white/80 mb-1">
                     {project.client}
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-white leading-tight mb-2 break-words">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-white/70 mt-3 max-w-lg">
+                  <p className="text-xs sm:text-sm text-white/70 mt-2 sm:mt-3 max-w-lg line-clamp-2 sm:line-clamp-3">
                     {project.description}
                   </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
+                  <div className="mt-2 sm:mt-3 md:mt-4 flex flex-wrap gap-1.5 sm:gap-2">
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-white/10 text-white text-sm rounded-full"
+                        className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/10 text-white text-xs sm:text-sm rounded-full"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <p className="text-white/50 mt-4 text-xs">
+                  <p className="text-white/50 mt-2 sm:mt-3 md:mt-4 text-xs">
                     {project.period}
                   </p>
                 </div>
