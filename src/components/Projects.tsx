@@ -15,6 +15,9 @@ export default function Projects() {
     const horizontal = horizontalRef.current;
     if (!section || !horizontal) return;
 
+    // 모바일에서는 가로 스크롤 비활성화 (768px 미만)
+    if (window.innerWidth < 768) return;
+
     const totalWidth =
       horizontal.scrollWidth - document.documentElement.clientWidth;
 
@@ -49,12 +52,12 @@ export default function Projects() {
         </h2>
       </div>
 
-      {/* 가로 스크롤 영역 */}
-      <div ref={horizontalRef} className="flex items-center px-4 sm:px-6 md:px-10">
+      {/* 가로 스크롤 영역 (데스크톱) / 세로 그리드 (모바일) */}
+      <div ref={horizontalRef} className="flex flex-col md:flex-row items-stretch md:items-center px-4 sm:px-6 md:px-10 gap-6 md:gap-0 py-8 md:py-0">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="shrink-0 w-[85vw] sm:w-[75vw] md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden mx-[2vw] sm:mx-[3vw]"
+            className="shrink-0 w-full md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden md:mx-[3vw]"
           >
             <div className="relative h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden">
               <img
