@@ -3,25 +3,91 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+/* Barlow Condensed font classes and automatic English font fallback */
+/* Apply Barlow Condensed to elements explicitly marked with lang="en" or with the utility classes below */
+:lang(en) {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.barlow-condensed-thin {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.barlow-condensed-extralight {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.barlow-condensed-light {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.barlow-condensed-regular {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-condensed-medium {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-condensed-semibold {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.barlow-condensed-bold {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Utility to prefer Barlow for Latin text blocks */
+.prefer-barlow {
+    font-family: 'Barlow Condensed', 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+        Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+        'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    /* hide native scrollbars for scrollers where we control scroll */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
 }

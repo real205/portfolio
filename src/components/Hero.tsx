@@ -12,11 +12,12 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="absolute w-full h-full object-cover opacity-30"
+          className="absolute w-full h-full object-cover"
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-programmer-working-on-laptop-4904-large.mp4" type="video/mp4" />
+          <source src="/videos/main.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-purple-900/30 to-black/70" />
+        {/* stronger left-to-right overlay for better left-aligned content contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent" />
       </div>
 
       {/* Animated particles */}
@@ -43,66 +44,73 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <motion.p
-          className="text-lg md:text-xl text-blue-400 mb-4 font-semibold"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Frontend Developer
-        </motion.p>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-24">
+          <div className="md:pr-12 text-left">
+            <motion.p
+              className="barlow-condensed-medium text-6xl md:text-6xl text-blue-400 mb-4 font-semibold"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              Frontend Developer
+            </motion.p>
 
-        <motion.h1
-          className="text-5xl md:text-7xl font-bold mb-6 text-white"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          한상헌
-        </motion.h1>
+            <motion.h1
+              className="barlow-condensed-regular text-[120px] md:text-[120px] font-regular mb-6 text-white leading-[1]"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              HAHN SANGHEON
+            </motion.h1>
 
-        <motion.p
-          className="text-xl md:text-2xl text-gray-200 mb-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          9년 경력의 프론트엔드 개발자입니다
-        </motion.p>
+            <motion.p
+              className="text-3xl md:text-3xl text-gray-200 mb-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              10년 경력의 프론트엔드 개발자입니다
+            </motion.p>
 
-        <motion.p
-          className="text-lg md:text-xl text-gray-300 mb-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          React · Next.js · TypeScript
-        </motion.p>
+            <motion.p
+              className="barlow-condensed-regular text-3xl md:text-3xl text-gray-300 mb-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              React · Next.js · TypeScript · HTML · CSS · JAVASCRIPT
+            </motion.p>
 
-        <motion.div
-          className="flex gap-4 justify-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          <motion.a
-            href="#projects"
-            className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            프로젝트 보기
-          </motion.a>
-          <motion.a
-            href="#contact"
-            className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg hover:bg-blue-500/20 transition-colors backdrop-blur-sm"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            연락하기
-          </motion.a>
-        </motion.div>
+            <motion.div
+              className="flex gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <motion.a
+                href="#projects"
+                className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                프로젝트 보기
+              </motion.a>
+              <motion.a
+                href="#contact"
+                className="px-8 py-3 border-2 border-white/40 text-white rounded-lg hover:bg-white/10 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                연락하기
+              </motion.a>
+            </motion.div>
+          </div>
+
+          {/* right side: empty visual area or future illustration */}
+          <div className="hidden md:block" />
+        </div>
       </div>
 
       {/* Scroll indicator */}
