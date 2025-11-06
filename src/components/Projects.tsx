@@ -44,7 +44,7 @@ export default function Projects() {
     >
       {/* 상단 고정 타이틀 */}
       <div className=" w-full bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur-sm">
-        <h2 className="barlow-condensed-medium uppercase text-[140px] px-10 pt-40 pb-20 md:text-[140px] font-extrabold text-gray-900 dark:text-white opacity-60">
+        <h2 className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[140px] px-6 sm:px-10 pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20 font-extrabold text-gray-900 dark:text-white opacity-60">
           Projects
         </h2>
       </div>

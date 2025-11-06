@@ -31,7 +31,7 @@ export default function Skills() {
       >
         {/* 타이틀 */}
         <motion.h2
-          className="barlow-condensed-medium uppercase text-[160px] md:text-[200px] text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 drop-shadow-xl"
+          className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[160px] xl:text-[200px] text-center mb-12 sm:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 drop-shadow-xl"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -41,7 +41,7 @@ export default function Skills() {
         </motion.h2>
 
         {/* 스킬 카드들 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 max-w-5xl mx-auto px-4 sm:px-0">
           {skills.map((s, i) => (
             <motion.div
               key={s.name}
@@ -49,13 +49,13 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.6 }}
-              className="p-6 rounded-2xl bg-white/80 dark:bg-gray-800/60 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
+              className="p-4 sm:p-6 rounded-2xl bg-white/80 dark:bg-gray-800/60 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700"
             >
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="barlow-condensed-medium text-2xl font-bold text-gray-900 dark:text-white">
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <h3 className="barlow-condensed-medium text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
                   {s.name}
                 </h3>
-                <span className="text-lg text-gray-500 dark:text-gray-300">
+                <span className="text-base sm:text-lg text-gray-500 dark:text-gray-300">
                   {s.level}%
                 </span>
               </div>

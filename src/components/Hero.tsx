@@ -44,11 +44,11 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-24">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-12 sm:py-20 md:py-24">
           <div className="md:pr-12 text-left">
             <motion.p
-              className="barlow-condensed-medium text-6xl md:text-6xl text-blue-400 mb-4 font-semibold"
+              className="barlow-condensed-medium text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-blue-400 mb-3 sm:mb-4 font-semibold"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -57,7 +57,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.h1
-              className="barlow-condensed-regular text-[120px] md:text-[120px] font-regular mb-6 text-white leading-[1]"
+              className="barlow-condensed-regular text-5xl sm:text-7xl md:text-8xl lg:text-[120px] font-regular mb-4 sm:mb-6 text-white leading-[1.1] sm:leading-[1]"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -66,7 +66,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-3xl md:text-3xl text-gray-200 mb-2"
+              className="text-lg sm:text-2xl md:text-3xl text-gray-200 mb-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -75,7 +75,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.p
-              className="barlow-condensed-regular text-3xl md:text-3xl text-gray-300 mb-8"
+              className="barlow-condensed-regular text-base sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-6 sm:mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -84,14 +84,14 @@ export default function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
             >
               <motion.a
                 href="#projects"
-                className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+                className="w-full sm:w-auto text-center px-6 sm:px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -99,7 +99,7 @@ export default function Hero() {
               </motion.a>
               <motion.a
                 href="#contact"
-                className="px-8 py-3 border-2 border-white/40 text-white rounded-lg hover:bg-white/10 transition-colors"
+                className="w-full sm:w-auto text-center px-6 sm:px-8 py-3 border-2 border-white/40 text-white rounded-lg hover:bg-white/10 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
