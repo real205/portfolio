@@ -38,39 +38,39 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-6">
-        <h2 className="barlow-condensed-medium uppercase text-[140px] text-center mb-12 text-gray-900 dark:text-white">
+    <section id="contact" className="min-h-screen flex items-center bg-white dark:bg-gray-900 py-12 sm:py-16 md:py-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[140px] text-center mb-8 sm:mb-10 md:mb-12 text-gray-900 dark:text-white">
           Contact
         </h2>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-start">
           {/* 왼쪽 안내 */}
-          <div className="p-8 rounded-xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 shadow-lg">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+          <div className="p-6 sm:p-8 rounded-xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 shadow-lg">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-white">
               WELCOME
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">
               프로젝트 협업, 컨설팅, 또는 간단한 인사라도 환영합니다.
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <div>
-                <div className="text-sm text-gray-500">Email</div>
+                <div className="text-xs sm:text-sm text-gray-500">Email</div>
                 <a
                   href="mailto:hahnsangheon@gmail.com"
-                  className="text-lg text-blue-600 dark:text-blue-400 uppercase"
+                  className="text-sm sm:text-base md:text-lg text-blue-600 dark:text-blue-400 uppercase break-all"
                 >
                   hahnsangheon@gmail.com
                 </a>
               </div>
               <div>
-                <div className="text-sm text-gray-500">GitHub</div>
+                <div className="text-xs sm:text-sm text-gray-500">GitHub</div>
                 <a
                   href="https://github.com/real205"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg text-gray-900 dark:text-gray-100 hover:underline uppercase"
+                  className="text-sm sm:text-base md:text-lg text-gray-900 dark:text-gray-100 hover:underline uppercase break-all"
                 >
                   github.com/real205
                 </a>
@@ -79,8 +79,8 @@ export default function Contact() {
           </div>
 
           {/* 오른쪽 폼 */}
-          <div className="p-8 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 text-white shadow-xl">
-            <h3 className="text-xl font-semibold mb-3">Send a message</h3>
+          <div className="p-6 sm:p-8 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 text-white shadow-xl">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Send a message</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm mb-1">Name</label>
