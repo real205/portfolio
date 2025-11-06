@@ -23,7 +23,7 @@ export default function Skills() {
       <div className="absolute w-[600px] h-[600px] bg-gradient-to-r from-pink-400 to-yellow-400 rounded-full blur-[160px] opacity-10 bottom-[-150px] right-[-150px]" />
 
       <motion.div
-        className="container mx-auto px-6 relative z-10"
+        className="container mx-auto px-4 sm:px-6 relative z-10 overflow-hidden"
         initial={{ opacity: 0, scale: 0.95, y: 40 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: true }}
@@ -31,7 +31,7 @@ export default function Skills() {
       >
         {/* 타이틀 */}
         <motion.h2
-          className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[160px] xl:text-[200px] text-center mb-12 sm:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 drop-shadow-xl"
+          className="barlow-condensed-medium uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-center mb-10 sm:mb-12 md:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 drop-shadow-xl break-words"
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -41,7 +41,7 @@ export default function Skills() {
         </motion.h2>
 
         {/* 스킬 카드들 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 max-w-5xl mx-auto px-4 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 max-w-5xl mx-auto">
           {skills.map((s, i) => (
             <motion.div
               key={s.name}

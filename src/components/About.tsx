@@ -22,19 +22,19 @@ export default function About() {
       id="about"
       className="relative min-h-screen flex flex-col justify-center bg-black text-white overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto w-full px-6 py-24">
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 py-16 sm:py-20 md:py-24 overflow-hidden">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-12 sm:mb-16 md:mb-20"
+          className="mb-10 sm:mb-12 md:mb-16 lg:mb-20"
         >
-          <h2 className="barlow-condensed-medium uppercase text-6xl sm:text-8xl md:text-9xl lg:text-[140px] leading-none font-extrabold uppercase mb-4 sm:mb-6">
+          <h2 className="barlow-condensed-medium uppercase text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-none font-extrabold uppercase mb-3 sm:mb-4 md:mb-6 break-words">
             About Me
           </h2>
-          <p className="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
             사용자 중심의 경험을 설계하고 React · Next.js를 기반으로
             퍼포먼스와 구조적인 완성도를 추구하는 프론트엔드 개발자{" "}
             <span className="font-semibold text-white">한상헌</span>입니다.
@@ -42,7 +42,7 @@ export default function About() {
         </motion.div>
 
         {/* Stats + Animated Graph */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 items-center text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12 items-center text-center">
           {stats.map((s, i) => (
             <motion.div
               key={i}
@@ -52,10 +52,10 @@ export default function About() {
               viewport={{ once: true }}
               className="flex flex-col items-center justify-center md:border-l border-gray-700 md:first:border-0"
             >
-              <div className="text-6xl sm:text-8xl md:text-9xl lg:text-[120px] font-extrabold text-white leading-none">
+              <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold text-white leading-none">
                 {s.value}
               </div>
-              <div className="text-base sm:text-lg md:text-xl font-semibold mt-2 sm:mt-3 text-gray-200">
+              <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold mt-2 sm:mt-3 text-gray-200">
                 {s.label}
               </div>
               <p className="text-xs sm:text-sm text-gray-400 mt-1 sm:mt-2 px-4">{s.desc}</p>
