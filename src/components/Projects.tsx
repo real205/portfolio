@@ -59,11 +59,11 @@ export default function Projects() {
             key={project.id}
             className="shrink-0 w-full md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden mx-0 md:mx-[3vw]"
           >
-            <div className="relative h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden bg-gray-100 dark:bg-gray-700">
+            <div className="relative h-[50vh] sm:h-[55vh] md:h-[50vh] lg:h-[55vh] overflow-hidden bg-gray-100 dark:bg-gray-700">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-contain md:object-cover"
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4 sm:p-6 md:p-8">
                 <div className="w-full">
