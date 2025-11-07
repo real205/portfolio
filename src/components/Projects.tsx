@@ -43,7 +43,7 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="relative bg-gray-50 dark:bg-gray-900 text-white h-full"
+      className="relative bg-gray-50 dark:bg-gray-900 text-white min-h-screen md:h-full overflow-x-hidden"
     >
       {/* 상단 고정 타이틀 */}
       <div className="w-full bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur-sm overflow-x-hidden">
@@ -53,11 +53,11 @@ export default function Projects() {
       </div>
 
       {/* 가로 스크롤 영역 (데스크톱) / 세로 그리드 (모바일) */}
-      <div ref={horizontalRef} className="flex flex-col md:flex-row items-stretch md:items-center px-4 sm:px-6 md:px-10 gap-6 md:gap-0 py-8 md:py-0">
+      <div ref={horizontalRef} className="flex flex-col md:flex-row items-stretch md:items-center px-4 sm:px-6 md:px-10 gap-6 md:gap-0 py-8 md:py-0 overflow-x-hidden">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="shrink-0 w-full md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden md:mx-[3vw]"
+            className="shrink-0 w-full md:w-[65vw] lg:w-[55vw] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden mx-0 md:mx-[3vw]"
           >
             <div className="relative h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] overflow-hidden bg-gray-100 dark:bg-gray-700">
               <img
