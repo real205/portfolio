@@ -114,18 +114,19 @@ export default function About() {
             <img
               src="/images/samsung.svg"
               alt="Samsung"
-              className="h-12 w-auto"
+              className="max-h-12 w-full sm:max-w-[180px]"
             />
             <img
               src="/images/lgensol.png"
               alt="LG Energy Solution"
-              className="h-12 w-auto"
+              className="max-h-12 w-[80%] sm:max-w-[180px]"
             />
             <img
               src="/images/skcnc.png"
               alt="SK C&C"
-              className="h-12 w-auto"
+              className="max-h-[130px] w-auto sm:max-w-[180px] sm:max-h-[110px]"
             />
+
           </div>
         </motion.div>
       </div>
