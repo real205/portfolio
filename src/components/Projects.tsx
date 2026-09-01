@@ -102,6 +102,17 @@ export default function Projects() {
 const projects = [
   {
     id: 1,
+    title: "신한카드 신규페이지 구축 및 이벤트 페이지 운영",
+    period: "2025.12 ~ 2026.10",
+    description:
+      "신한카드 신규페이지 구축 및 이벤트 페이지 운영. CMS 기반 웹사이트 구축 및 유지보수, 이벤트 페이지 제작 및 운영",
+    tech: ["HTML", "CSS", "JavaScript", "GitLab", "Figma", "CMS"],
+    client: "신한카드",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+  },
+    {
+    id: 2,
     title: "LG 에너지솔루션 비셀체크 어드민",
     period: "2025.07 ~ 2025.10",
     description:
@@ -109,10 +120,10 @@ const projects = [
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     client: "LG에너지솔루션",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
   },
   {
-    id: 2,
+    id: 3,
     title: "삼성 갤럭시 스튜디오",
     period: "2025.03 ~ 2025.04",
     description:
@@ -120,46 +131,36 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     client: "PTKOREA",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
   },
   {
-    id: 3,
+    id: 4,
     title: "SK C&C AI 포털 구축",
     period: "2025.01 ~ 2025.02",
     description: "EJS 기반 AI 포털 웹사이트 구축 및 컴포넌트 개발",
     tech: ["EJS", "Node.js", "JavaScript"],
     client: "SK C&C",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
   },
   {
-    id: 4,
+    id: 5,
     title: "빅터 인터트레이드",
     period: "2024.11 ~ 2024.12",
     description: "기업 웹사이트 UI 설계 및 퍼블리싱",
     tech: ["HTML", "CSS", "JavaScript"],
     client: "드래프트",
     image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80",
   },
   {
-    id: 5,
+    id: 6,
     title: "빅토리 딜리버리",
     period: "2023.01 ~ 2025.05",
     description: "React 기반 배송 플랫폼 웹사이트 신규 구축 및 컴포넌트 개발",
     tech: ["React", "JavaScript"],
     client: "로지포커스",
     image:
-      "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80",
-  },
-  {
-    id: 6,
-    title: "컨비니 재팬 몰",
-    period: "2023.01 ~ 2023.06",
-    description: "고도몰 활용 일본 의류 전문 쇼핑몰 구축 및 반응형 구현",
-    tech: ["고도몰", "HTML", "CSS", "JavaScript"],
-    client: "로지포커스",
-    image:
       "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800&q=80",
-  }
+  },
 ];

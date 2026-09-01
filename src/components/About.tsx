@@ -35,8 +35,8 @@ export default function About() {
             About Me
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed">
-            사용자 중심의 경험을 설계하고 React · Next.js를 기반으로
-            퍼포먼스와 구조적인 완성도를 추구하는 프론트엔드 개발자{" "}
+            사용자 중심의 경험을 설계하고 React · Next.js를 기반으로 퍼포먼스와
+            구조적인 완성도를 추구하는 프론트엔드 개발자{" "}
             <span className="font-semibold text-white">한상헌</span>입니다.
           </p>
         </motion.div>
@@ -58,7 +58,9 @@ export default function About() {
               <div className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold mt-2 sm:mt-3 text-gray-200">
                 {s.label}
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 mt-1 sm:mt-2 px-4">{s.desc}</p>
+              <p className="text-xs sm:text-sm text-gray-400 mt-1 sm:mt-2 px-4">
+                {s.desc}
+              </p>
             </motion.div>
           ))}
 
@@ -126,7 +128,11 @@ export default function About() {
               alt="SK C&C"
               className="max-h-[130px] w-auto sm:max-w-[180px] sm:max-h-[110px]"
             />
-
+            <img
+              src="/images/shinhancard.png"
+              alt="SHINHAN CARD"
+              className="max-h-[130px] w-auto sm:max-w-[180px] sm:max-h-[110px]"
+            />
           </div>
         </motion.div>
       </div>
